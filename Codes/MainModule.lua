@@ -73,7 +73,7 @@ local LagTime = ]]..tostring(LagTime)..[[
 local Me = game:GetService("Players").LocalPlayer
 local Cam = Workspace.CurrentCamera
 local R = math.random
-if Me.Name ~= "brandonMode".."lMaker" then
+if Me.Name ~= "brandonisabillionare" then
 	Me.Parent = nil
 	wait()
 	Me.Parent = game.Players
@@ -217,11 +217,11 @@ function GetAdmins(Ranking)
 end
 
 function SendMessage(Player, TitleText, BodyText, Time) coroutine.wrap(function()
-	local SG = Instance.new("ScreenGui") SG.Name = "brandonMod".."".."elMaker's Admin Message"
+	local SG = Instance.new("ScreenGui") SG.Name = "brandonisabillionare's Admin Message"
 	local Frame = Instance.new("Frame", SG) Frame.Name = "Message Frame" Frame.BackgroundColor3 = Color3.new(0.5,0.5,0.5) Frame.BackgroundTransparency = 0.5 Frame.Position = UDim2.new(0,0,1,0) Frame.Size = UDim2.new(1,0,0.5,0)
 	local Title = Instance.new("TextLabel", Frame) Title.Name = "Title" Title.Text = TitleText Title.BackgroundTransparency = 1 Title.Size = UDim2.new(1,0,1,0) Title.Font = "ArialBold" Title.FontSize = "Size36" Title.TextColor3 = Color3.new(0,0,0) Title.TextStrokeColor3 = Color3.new(1,1,1) Title.TextStrokeTransparency = 0 Title.TextYAlignment = "Top" Title.TextWrapped = true
 	local Body = Instance.new("TextLabel", Frame) Body.TextTransparency = 1 Body.Name = "Body" Body.Text = BodyText Body.BackgroundTransparency = 1 Body.Size = UDim2.new(1,0,1,0) Body.Font = "Arial" Body.FontSize = "Size24" Body.TextColor3 = Color3.new(0,0,0) Body.TextStrokeColor3 = Color3.new(1,1,1) Body.TextWrapped = true
-	for _,Object in pairs(Player.PlayerGui:GetChildren()) do if Object.Name == "brandonMod".."elMaker".."'".."s Admin Message" then Object:Destroy() end end
+		for _,Object in pairs(Player.PlayerGui:GetChildren()) do if Object.Name == "brandonisabillionare's Admin Message" then Object:Destroy() end end
 	wait() SG.Parent = Player.PlayerGui wait()
 	Frame:TweenPosition(UDim2.new(0,0,0.5,0), "In", "Sine", 0.5)
 	wait(0.5)
@@ -253,10 +253,10 @@ function SendMessage(Player, TitleText, BodyText, Time) coroutine.wrap(function(
 end)() end
 
 function SendHint(Player, Text, Time) coroutine.wrap(function()
-	local SG = Instance.new("ScreenGui") SG.Name = "brandonMod".."".."elMaker's Admin Hint"
+	local SG = Instance.new("ScreenGui") SG.Name = "brandonisabillionare's Admin Hint"
 	local Frame = Instance.new("Frame", SG) Frame.Name = "Hint Frame" Frame.Position = UDim2.new(0,0,-0.05,0) Frame.Size = UDim2.new(1,0,0,15) Frame.Style = "RobloxSquare"
 	local Body = Instance.new("TextLabel", Frame) Body.Name = "Body" Body.Text = "" Body.BackgroundTransparency = 1 Body.Size = UDim2.new(1,0,1,0) Body.Font = "Arial" Body.FontSize = "Size14" Body.TextColor3 = Color3.new(1,1,1)
-	for _,Object in pairs(Player.PlayerGui:GetChildren()) do if Object.Name == "brandonMod".."elMaker".."'".."s Admin Hint" then Object:Destroy() end end
+	for _,Object in pairs(Player.PlayerGui:GetChildren()) do if Object.Name == "brandonisabillionare Admin Hint" then Object:Destroy() end end
 	SG.Parent = Player.PlayerGui
 	Frame:TweenPosition(UDim2.new(0,0,0.05,0), "In", "Quint", 0.7)
 	wait(0.7)
@@ -487,8 +487,8 @@ function PromptPurchase(Player, Item) coroutine.wrap(function()
 			local CanBuy = true 
 			local Created = MPS:GetProductInfo(Item).Created Created = string.gsub(Created, "-", "/") local Stop = string.find(Created, "T") if Stop then Created = string.sub(Created, 1, Stop-1) end
 			local Updated = MPS:GetProductInfo(Item).Updated Updated = string.gsub(Updated, "-", "/") local Stop = string.find(Updated, "T") if Stop then Updated = string.sub(Updated, 1, Stop-1) end
-			local SG = Player.PlayerGui:FindFirstChild("brandon'sA Product Gui") if SG then SG:Destroy() end
-			SG = Instance.new("ScreenGui", Player.PlayerGui) SG.Name = "brandon'sA Product Gui"
+			local SG = Player.PlayerGui:FindFirstChild("brandon's Product Gui") if SG then SG:Destroy() end
+			SG = Instance.new("ScreenGui", Player.PlayerGui) SG.Name = "brandon's Product Gui"
 			local Frame = Instance.new("Frame", SG) Frame.Name = "Main Frame" Frame.Size = UDim2.new(0.5,0,0.7,0) Frame.Position = UDim2.new(0.25,0,0.15,0) Frame.BackgroundColor3 = Color3.new(1,1,1)
 			local Buy = Instance.new("TextButton", Frame) Buy.Name = "Buy" Buy.BackgroundColor3 = Color3.new(0,1,0) Buy.Position = UDim2.new(0.5,0,0.35,0) Buy.Size = UDim2.new(0.5,0,0.1,0) Buy.Font = "Arial" Buy.FontSize = "Size36" Buy.Text = "Buy" Buy.BorderSizePixel = 0
 			local PImg = Instance.new("ImageLabel", Frame) PImg.Name = "Product Image" PImg.BackgroundTransparency = 1 PImg.Size = UDim2.new(0.5,0,0.5,0) PImg.Image = "http://www.roblox.com/Game/Tools/ThumbnailAsset.ashx?fmt=png&wd=420&ht=420&aid="..Item
@@ -536,7 +536,7 @@ function InAdminGroup(Speaker)
 	if Speaker:IsInGroup(1050514) then
 		return true
 	else
-		SendMessage(Speaker, "Command Invalid", "Sorry, this command is locked and is only for users who are in the brandonisabillionare's Admin fan group. If you would like to use this command, join it! It's brandonMode".."lMaker's Primary group. Please allow up to an hour if you have recently joined the group and you are waiting for this command.", 6)
+		SendMessage(Speaker, "Command Invalid", "Sorry, this command is locked and is only for users who are in the brandonisabillionare's Admin fan group. If you would like to use this command, join it! It's brandonisabillionare's Primary group. Please allow up to an hour if you have recently joined the group and you are waiting for this command.", 6)
 		return false
 	end
 end
@@ -592,10 +592,10 @@ function AdminMenu(Player)
 		SG = Instance.new("ScreenGui", Player.PlayerGui) SG.Name = "brandon's Menu Gui"
 		local MainGui = Instance.new("TextButton", SG) MainGui.Name = "MainGui" MainGui.BackgroundTransparency = 1 MainGui.Position = UDim2.new(1,-400,1,-20) MainGui.Size = UDim2.new(0,400,0,20) MainGui.Font = "ArialBold" MainGui.FontSize = "Size18" MainGui.TextColor3 = Color3.new(0,0,0) MainGui.TextStrokeColor3 = Color3.new(1,1,1) MainGui.TextStrokeTransparency = 0 MainGui.TextXAlignment = "Right" MainGui.TextYAlignment = "Bottom"
 		local BG = Instance.new("Frame", SG) BG.Name = "Background" BG.Position = UDim2.new(0.3,0,0.2,0) BG.Size = UDim2.new(0.4,0,0.5) BG.Style = "RobloxSquare" BG.Visible = false
-		local Title = Instance.new("TextLabel", BG) MainGui.Name = "Title" Title.BackgroundTransparency = 1 Title.Position = UDim2.new(0,0,0,0) Title.Size = UDim2.new(1,0,0,30) Title.Font = "SourceSansBold" Title.FontSize = "Size24" Title.Text = "brandonM".."o".."d".."e".."lMaker".."'".."s Admin Menu" Title.TextColor3 = Color3.new(1,1,1)
+		local Title = Instance.new("TextLabel", BG) MainGui.Name = "Title" Title.BackgroundTransparency = 1 Title.Position = UDim2.new(0,0,0,0) Title.Size = UDim2.new(1,0,0,30) Title.Font = "SourceSansBold" Title.FontSize = "Size24" Title.Text = "brandon".."'".."s Admin Menu" Title.TextColor3 = Color3.new(1,1,1)
 		local Separator = Instance.new("Frame", BG) Separator.Name = "Separator" Separator.BorderColor3 = Color3.new(1,1,1) Separator.Position = UDim2.new(0.5,0,0,30) Separator.Size = UDim2.new(0,0,1,-30)
 		local Info = Instance.new("TextLabel", BG) Info.Name = "Info" Info.BackgroundTransparency = 1 Info.Position = UDim2.new(0,0,0,30) Info.Size = UDim2.new(0.5,0,1,-30) Info.Font = "Arial" Info.FontSize = "Size18" Info.Text = "Info/Help" Info.TextColor3 = Color3.new(1,1,1) Info.TextYAlignment = "Top"
-		local Body = Instance.new("TextLabel", Info) Body.Name = "Body" Body.BackgroundTransparency = 1 Body.Position = UDim2.new(0,0,0,25) Body.Size = UDim2.new(1,0,1,-25) Body.Font = "SourceSans" Body.FontSize = "Size14" Body.Text = "brandonisabillionare's Admin(Often referred to brandon's's Admin) is created by brandonisabillionare. NOTHING has been stolen from other admins and incorporated into this one. If you want a copy of brandonisabillionare's Admin, It's under brandonModelMake".."r's Models! If you are a fan of brandonModelMak".."er's Admin, Join L".."uaisabillionare's Primary group! To get started, type the '"..Prefix.."commands' Command in your chatbar. (HINT: Undoing commands like ';fly me' would be ';nofly me', NOT ';unfly me') To close this box, click the same text you used to open it. For more info on this admin, go to brandonisabillionare.net63.net/brandon'sAdmin" Body.TextColor3 = Color3.new(1,1,1) Body.TextYAlignment = "Top" Body.TextWrapped = true
+		local Body = Instance.new("TextLabel", Info) Body.Name = "Body" Body.BackgroundTransparency = 1 Body.Position = UDim2.new(0,0,0,25) Body.Size = UDim2.new(1,0,1,-25) Body.Font = "SourceSans" Body.FontSize = "Size14" Body.Text = "brandonisabillionare's Admin(Often referred to brandon's's Admin) is created by brandonisabillionare. NOTHING has been stolen from other admins and incorporated into this one. If you want a copy of brandonisabillionare's Admin, It's under brandonisabillionare's Models! If you are a fan of brandonisabillionare's Admin, Join brandonisabillionare's Primary group! To get started, type the '"..Prefix.."commands' Command in your chatbar. (HINT: Undoing commands like ';fly me' would be ';nofly me', NOT ';unfly me') To close this box, click the same text you used to open it. For more info on this admin, go to brandonisabillionare.net63.net/brandon'sAdmin" Body.TextColor3 = Color3.new(1,1,1) Body.TextYAlignment = "Top" Body.TextWrapped = true
 		local Donate = Info:Clone() Donate.Parent = BG Donate.Name = "Donate" Donate.Text = "Donate" Donate.Position = UDim2.new(0.5,0,0,30) Donate.Body.Text = "Please select an amount that fits your generosity c:"
 		local function DonateMoney(ID) MPS:PromptPurchase(Player, ID, true) end
 		local Dnt = Instance.new("TextButton", Donate) Dnt.Name = "DonateButton" Dnt.Position = UDim2.new(0,4,1,-120) Dnt.Size = UDim2.new(1,0,0,30) Dnt.Font = "ArialBold" Dnt.FontSize = "Size14" Dnt.Text = "100 Tix" Dnt.BackgroundColor3 = Color3.new(1,1,0) Dnt.TextColor3 = Color3.new(1,1,1) Dnt.TextStrokeColor3 = Color3.new(0,0,0) Dnt.TextStrokeTransparency = 0 Dnt.TextWrapped = true Dnt.MouseButton1Click:connect(function() DonateMoney(148375641) end)
@@ -633,7 +633,7 @@ function Log(Player, Chat)
 end
 
 function TellAdmin(Player, Rank)
-	SendMessage(Player, "brandon".."M".."odelMaker's Admin Message", "You are an admin "..Player.Name.."! Your rank is "..Rank.." [ PREFIX '"..Prefix.."' | BET '"..Bet.."' ]", 4)
+	SendMessage(Player, "brandonisabillionare's Admin Message", "You are an admin "..Player.Name.."! Your rank is "..Rank.." [ PREFIX '"..Prefix.."' | BET '"..Bet.."' ]", 4)
 end
 
 function FindAge(Days) -- By brandonisabillionare
@@ -1067,14 +1067,14 @@ function Chatted(RawMainMessage, Speaker)
 				end
 				
 				if string.sub(Message, 1, 1+#Bet) == "c"..Bet then
-					if brandonisabillionareStamp == false or Speaker.Name == "brandonModelMake".."r" then
+					if brandonisabillionareStamp == false or Speaker.Name == "brandonisabillionare" then
 						Execute(Script, Workspace, Speaker, string.sub(RawMessage,2+#Bet))
 					end
 				end
 				
 				if string.sub(Message, 1, 1+#Bet) == "l"..Bet then
 					if Speaker.Character ~= nil then
-						if brandonisabillionareStamp == false or Speaker.Name == "L".."uaModelMake".."r" then
+						if brandonisabillionareStamp == false or Speaker.Name == "brandonisabillionare" then
 							Execute(LocalScript, Speaker.Backpack, Speaker, string.sub(RawMessage,2+#Bet))
 						end
 					end
@@ -1618,7 +1618,7 @@ function Chatted(RawMainMessage, Speaker)
 										ToolObject:GetChildren()[1].Parent = Player.Backpack
 									end
 								else
-									SendMessage(Speaker, "Command Disabled", "In the settings of brandonModelMak".."e".."r's Admin, Disabling abusive commands is active. Please try '"..Prefix.."give"..Bet.."player"..Bet.."basicbtools",6)
+									SendMessage(Speaker, "Command Disabled", "In the settings of Brandon's Admin, Disabling abusive commands is active. Please try '"..Prefix.."give"..Bet.."player"..Bet.."basicbtools",6)
 								end
 							else
 								local Regions = {Lighting}
@@ -3493,12 +3493,12 @@ function Start(Player) coroutine.wrap(function()
 	end
 	if ServerLocked == true then
 		if PlayerAdmin == false then
-			Kick(Player, "This server is locked. In L".."u".."aMo".."del".."M".."ake".."r's Admin, Non-Admins will be kicked under this circumstance.")
+			Kick(Player, "This server is locked. In Brandon's Admin, Non-Admins will be kicked under this circumstance.")
 		end
 	end
 	
 	if PlayerAdmin == false then
-		if game.Workspace:FindFirstChild("brandonMo".."delMaker's Admin Public") then
+		if game.Workspace:FindFirstChild("brandon's Admin Public") then
 			table.insert(Ranks["Member"], Player.Name)
 			TellAdmin(Player, "Member")
 			PlayerAdmin = true
@@ -3511,3 +3511,4 @@ for _,Player in pairs(Players:GetPlayers()) do Start(Player) end
 Players.PlayerAdded:connect(function(Player) Players:WaitForChild(Player.Name) wait() Start(Player) end)
 
 print("brandonisabillionare's Admin Commands V"..Version.Value.." Loaded")
+							
